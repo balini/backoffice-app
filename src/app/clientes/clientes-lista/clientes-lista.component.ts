@@ -10,7 +10,7 @@ import { ConfirmacaoDialogComponent } from '../clientes-dialog/confirm-dialog.co
 @Component({
   selector: 'app-clientes-lista',
   templateUrl: './clientes-lista.component.html',
-  styleUrls: ['./clientes-lista.component.css']
+  styleUrls: ['./clientes-lista.component.scss']
 })
 export class ClientesListaComponent implements OnInit {
   @ViewChild(MatTable) table!: MatTable<any>;
