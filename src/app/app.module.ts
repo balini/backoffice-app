@@ -4,7 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ClientesListaModule } from './clientes/clientes-lista/clientes-lista.module';
+import { ClientesModule } from './clientes/clientes.module';
+//import { ClientesListaModule } from './clientes/clientes-lista/clientes-lista.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ClientesListaModule } from './clientes/clientes-lista/clientes-lista.mo
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ClientesListaModule,
+    //ClientesListaModule,
+    ClientesModule,
     AppRoutingModule
   ],
   providers: [],

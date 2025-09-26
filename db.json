@@ -1,79 +1,70 @@
 {
   "clientes": [
     {
-      "id": 1,
       "nome": "João da Silva",
       "email": "joao.silva@santander.com",
       "localizacao": "Garibaldi - RS",
       "agencia": "03372424-8",
-      "conta": "1097",
-      "saldo": 1500.75
+      "conta": "1098",
+      "saldo": 1500.75,
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Maria Oliveira",
       "email": "maria.oliveira@santander.com",
       "localizacao": "Nova Granada - SP",
       "agencia": "01459333-8",
       "conta": "0282",
-      "saldo": 2300.50
+      "saldo": 2300.5
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Elizabeth Moraes",
       "email": "elizabeth.moraes@santander.com",
       "localizacao": "Mirassol - SP",
       "agencia": "43130217-4",
       "conta": "3783",
-      "saldo": 6000.30
+      "saldo": 6000.3
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Dennis Lima",
       "email": "dennis.lima@santander.com",
       "localizacao": "Barretos - SP",
       "agencia": "27013040-3",
       "conta": "3047",
-      "saldo": 55899.10
+      "saldo": 55899.1
     },
     {
-      "id": 5,
-      "nome": "Carlos Eduardo",
-      "email": "carlos.eduardo@santander.com",
-      "localizacao": "São Paulo - SP",
-      "agencia": "07703916-3",
-      "conta": "2176",
-      "saldo": 3429183.99
-    },
-    {
-      "id": 6,
+      "id": "6",
       "nome": "Ana Paula",
       "email": "ana.paula@santander.com",
       "localizacao": "Macaé - RJ",
       "agencia": "53872900-1",
       "conta": "3190",
-      "saldo": 3219.50
+      "saldo": 3219.5
     },
-     {
-      "id": 7,
+    {
+      "id": "7",
       "nome": "Mariana dos Santos",
       "email": "mariana.santos@santander.com",
       "localizacao": "Bonito - PE",
       "agencia": "53727784-5",
       "conta": "4019",
-      "saldo": 25600.00
+      "saldo": 25600
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Eduardo Pereira",
       "email": "eduardo.pereira@santander.com",
       "localizacao": "Itu - SP",
       "agencia": "43130217-4",
       "conta": "3783",
-      "saldo": 88901.30
+      "saldo": 88901.3
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Laura Fernandes",
       "email": "laura.fernandes@santander.com",
       "localizacao": "Niteroi - RJ",
@@ -82,13 +73,22 @@
       "saldo": 448899.39
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Alice Leite",
       "email": "alice.leite@santander.com",
       "localizacao": "Bertioga - SP",
       "agencia": "01435164-8",
       "conta": "0712",
-      "saldo": 1200.00
+      "saldo": 1200
+    },
+    {
+      "id": "3046",
+      "nome": "Jose do teste",
+      "email": "teste@teste.com",
+      "localizacao": "Fortaleza - CE",
+      "agencia": "2383-1",
+      "conta": "111",
+      "saldo": 4566
     }
   ]
 }
