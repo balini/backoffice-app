@@ -10,7 +10,7 @@ export class ConfirmacaoDialogComponent {
     public dialogRef: MatDialogRef<ConfirmacaoDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
-  fechar(confirmou: boolean) {
+  fechar(confirmou: boolean): void {
     this.dialogRef.close(confirmou);
   }
 }

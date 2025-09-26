@@ -1,22 +1,13 @@
 {
   "clientes": [
     {
-      "nome": "João da Silva",
-      "email": "joao.silva@santander.com",
-      "localizacao": "Garibaldi - RS",
-      "agencia": "03372424-8",
-      "conta": "1098",
-      "saldo": 1500.75,
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "nome": "Maria Oliveira",
+      "nome": "oi",
       "email": "maria.oliveira@santander.com",
       "localizacao": "Nova Granada - SP",
       "agencia": "01459333-8",
       "conta": "0282",
-      "saldo": 2300.5
+      "saldo": 2300.5,
+      "id": "2"
     },
     {
       "id": "3",

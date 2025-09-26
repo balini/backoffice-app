@@ -1,9 +1,7 @@
-<mat-toolbar color="primary" class="mat-toolbar">
-  <span>Gestão de clientes (backoffice)</span>
+<mat-toolbar class="mat-toolbar">
+  <span>Gestão de clientes (Backoffice)</span>
   <span class="spacer"></span>
-  <button mat-raised-button color="accent" (click)="adicionarCliente()" class="add-button">
-    Adicionar Cliente
-  </button>
+  <button mat-raised-button class="add-button" (click)="adicionarCliente()">Adicionar Cliente</button>
 </mat-toolbar>
 
 <div class="container">
@@ -12,7 +10,7 @@
     <input matInput [(ngModel)]="pesquisa" (keyup)="filtrarClientes()">
   </mat-form-field>
 
-  <table mat-table [dataSource]="clientesFiltrados" class="mat-elevation-z8 full-width">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <ng-container matColumnDef="nome">
       <th mat-header-cell *matHeaderCellDef> Nome </th>
@@ -50,7 +48,7 @@
         <button mat-icon-button color="primary" (click)="editarCliente(cliente)">
           <span>✎</span>
         </button>
-        <button mat-icon-button color="warn" (click)="confirmarExclusao(cliente)">
+        <button mat-icon-button color="warn" (click)="deletarCliente(cliente)">
           <span>✖</span>
         </button>
       </td>
@@ -60,3 +58,6 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 </div>
+
+
+

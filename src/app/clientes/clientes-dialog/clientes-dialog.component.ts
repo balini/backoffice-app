@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -17,10 +17,12 @@ export interface Cliente {
 @Component({
   selector: 'app-clientes-dialog',
   templateUrl: './clientes-dialog.component.html',
+  styleUrls: ['clientes-dialog.component.css']
 })
-export class ClientesDialogoComponent {
+export class ClientesDialogoComponent implements OnInit {
 
   form: FormGroup;
+  errorForm: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -39,13 +41,25 @@ export class ClientesDialogoComponent {
     });
   }
 
-  salvar() {
-    if (this.form.invalid) return;
+  ngOnInit(): void {
+    this.acompanhaForm();
+  }
+
+  acompanhaForm(): void {
+    this.form.valueChanges.subscribe(() => {
+      this.errorForm = false;
+    });
+  }
+
+  salvar(): void {
+    if (this.form.invalid) {
+        this.errorForm = true;
+        return;
+    }
 
     const cliente = this.form.value;
 
     if (this.data?.id) {
-      // Editar cliente existente
       this.http.put(`http://localhost:3000/clientes/${this.data.id}`, cliente)
         .subscribe({
           next: () => {
@@ -57,7 +71,6 @@ export class ClientesDialogoComponent {
           }
         });
     } else {
-      // Adicionar novo cliente
       this.http.post('http://localhost:3000/clientes', cliente)
         .subscribe({
           next: () => {
@@ -71,7 +84,7 @@ export class ClientesDialogoComponent {
     }
   }
 
-  cancelar() {
+  cancelar(): void {
     this.dialogRef.close(false);
   }
 }

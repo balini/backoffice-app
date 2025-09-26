@@ -36,3 +36,7 @@
   <button mat-button (click)="cancelar()">Cancelar</button>
   <button mat-flat-button color="primary" (click)="salvar()">{{ data?.id ? 'Salvar' : 'Adicionar' }}</button>
 </div>
+<div class="validation-error">
+    <span *ngIf="errorForm">Preencha os campos corretamente.</span>
+</div>
+  

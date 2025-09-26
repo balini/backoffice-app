@@ -32,7 +32,7 @@ export class ClienteFormDialogComponent {
     });
   }
 
-  save() {
+  save(): void {
     if (this.form.invalid) return;
 
     const payload: Cliente = { ...(this.data.cliente ?? {}), ...this.form.value };

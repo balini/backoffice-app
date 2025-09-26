@@ -7,8 +7,7 @@ import { Cliente } from '../cliente.model';
   providedIn: 'root'
 })
 export class ClientesService {
-  private baseUrl = '/clientes'; // Proxy configurado no Angular
-
+  private baseUrl = '/clientes'; 
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Cliente[]> {
