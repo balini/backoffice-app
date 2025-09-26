@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Aplicação de **backoffice** desenvolvida em **Angular** com **Angular Material**, permitindo gerenciar clientes com operações de **CRUD** (Criar, Ler, Atualizar, Deletar). A interface segue padrões de usabilidade de sistemas corporativos.
+Aplicação de **backoffice** desenvolvida em **Angular** com **Angular Material**, permitindo gerenciar clientes com operações de **CRUD** (Criar, Ler, Atualizar, Deletar). A interface segue padrões de usabilidade de sistemas corporativos, priorizando clareza e responsividade.
 
 ---
 
@@ -17,51 +17,51 @@ Aplicação de **backoffice** desenvolvida em **Angular** com **Angular Material
 
 ## Tecnologias
 
-- Angular v15  
-- Angular Material  
-- TypeScript  
-- JSON Server (simulação de API RESTful)  
+- **Angular v15**  
+- **Angular Material**  
+- **TypeScript**  
+- **JSON Server** (simulação de API RESTful)
 
 ---
 
 ## Estrutura do Projeto
 
-src/app/
-├─ clientes/
-│ ├─ clientes-lista/
-│ ├─ clientes-dialog/
-├─ app.component.ts/html
-└─ app.module.ts
-db.json
-proxy.conf.json
-
+- **src/app/**
+  - **clientes/**
+    - clientes-lista/
+    - clientes-dialog/
+  - app.component.ts / app.component.html
+  - app.module.ts
+- db.json
+- proxy.conf.json
 
 ---
 
 ## Execução
 
-1.Instalar dependências:
+### 1. Instalar dependências
+
 ```bash
 npm install
+```
 
-2.Iniciar JSON Server (API simulada):
+### 2. Iniciar JSON Server (API simulada)
 ```bash
 npm run start:json-server
+```
 
-3.Iniciar a aplicação Angular:
+### 3. Iniciar a aplicação Angular
 ```bash
 npm start
+```
 
----
+A aplicação Angular estará disponível em: http://localhost:4200/clientes
 
-Angular App: http://localhost:4200
-
-JSON Server: 
-GET http://localhost:3000/clientes
-GET http://localhost:3000/clientes/:id
-POST http://localhost:3000/clientes
-PUT http://localhost:3000/clientes/:id
-DELETE http://localhost:3000/clientes/:id
-
-
-
+A API estará disponível em http://localhost:3000
+```bash
+GET    /clientes
+GET    /clientes/:id
+POST   /clientes
+PUT    /clientes/:id
+DELETE /clientes/:id
+```
