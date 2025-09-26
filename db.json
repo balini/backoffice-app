@@ -1,15 +1,6 @@
 {
   "clientes": [
     {
-      "nome": "oi",
-      "email": "maria.oliveira@santander.com",
-      "localizacao": "Nova Granada - SP",
-      "agencia": "01459333-8",
-      "conta": "0282",
-      "saldo": 2300.5,
-      "id": "2"
-    },
-    {
       "id": "3",
       "nome": "Elizabeth Moraes",
       "email": "elizabeth.moraes@santander.com",
@@ -71,15 +62,6 @@
       "agencia": "01435164-8",
       "conta": "0712",
       "saldo": 1200
-    },
-    {
-      "id": "3046",
-      "nome": "Jose do teste",
-      "email": "teste@teste.com",
-      "localizacao": "Fortaleza - CE",
-      "agencia": "2383-1",
-      "conta": "111",
-      "saldo": 4566
     }
   ]
 }
