@@ -17,7 +17,7 @@ export interface Cliente {
 @Component({
   selector: 'app-clientes-dialog',
   templateUrl: './clientes-dialog.component.html',
-  styleUrls: ['clientes-dialog.component.css']
+  styleUrls: ['clientes-dialog.component.scss']
 })
 export class ClientesDialogoComponent implements OnInit {
 
